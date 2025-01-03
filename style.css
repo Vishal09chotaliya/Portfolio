@@ -235,6 +235,10 @@ span {
     margin-right: 20%;
 }
 
+.about-me{
+    height: 710px;
+}
+
 .tab-title {
     display: flex;
     margin-left: 20%;
