@@ -238,6 +238,26 @@ span {
 .about-me{
     height: 710px;
 }
+@media (max-width: 940px) {
+    .about-me {
+        height: 800px; 
+    }
+}
+@media (max-width: 600px) {
+    .about-me {
+        height: 900px; 
+    }
+}
+@media (max-width: 455px) {
+    .about-me {
+        height: 1000px; 
+    }
+}
+@media (max-width: 375px) {
+    .about-me {
+        height: 1100px; 
+    }
+}
 
 .tab-title {
     display: flex;
