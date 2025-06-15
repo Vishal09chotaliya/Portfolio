@@ -216,58 +216,43 @@ span {
 /* about page  */
 .about {
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
     text-align: center;
+    max-width: 1200px;
 }
 
 .about h2 {
-    margin: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
 .about hr {
-    width: 20%;
-    margin-left: 40%;
+    width: 60px;
+    margin: 0 auto;
+    border: 2px solid #ff004f;
+}
+
+.about-me {
+    height: auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .about-me .con {
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.about-me{
-    height: 710px;
-}
-@media (max-width: 940px) {
-    .about-me {
-        height: 800px; 
-    }
-}
-@media (max-width: 600px) {
-    .about-me {
-        height: 900px; 
-    }
-}
-@media (max-width: 455px) {
-    .about-me {
-        height: 1000px; 
-    }
-}
-@media (max-width: 375px) {
-    .about-me {
-        height: 1100px; 
-    }
+    margin: 20px 0;
+    text-align: justify;
 }
 
 .tab-title {
     display: flex;
-    margin-left: 20%;
-    margin-top: 20px;
     flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .tab-link {
-    margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -286,22 +271,62 @@ span {
 }
 
 .tab-link.active-link::after {
-    width: 70%;
+    width: 100%;
 }
 
 .tab-content {
-    margin-left: 22%;
-    margin-top: 25px;
     display: none;
-    height: 180px;
-}
-
-.tab-content li {
-    margin: 8px;
+    margin-top: 25px;
 }
 
 .tab-content.active-tab {
     display: block;
+}
+
+.tab-content ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.tab-content li {
+    margin: 8px 0;
+}
+
+/* Responsive text and spacing */
+@media (max-width: 768px) {
+    .tab-title {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .about-me .con {
+        margin: 10px 0;
+        font-size: 15px;
+    }
+
+    .tab-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tab-title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-link {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .about-me {
+        padding: 10px;
+    }
+
+    .about-me .con {
+        font-size: 14px;
+    }
 }
 
 /* contact page  */
